@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Valentine's Day</title>
+    <style>
+        body {
+            background-color: #FFB6C1; /* Solid light pink color */
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .poem {
+            text-align: center;
+            font-size: 20px;
+            line-height: 1.5;
+            font-family: 'Bell MT', serif;
+            font-weight: bold;
+            font-style: oblique;
+        }
+
+        .message-container {
+            background-color: #000; /* Black background for the page */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            color: #ff4d4d; /* Red color for the text */
+            text-align: center;
+            position: relative;
+        }
+
+        .message {
+            font-size: 24px;
+        }
+
+        #clickMe {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            color: #fff; /* White color for the text */
+            background-color: transparent; /* Transparent background for the button */
+            border: none; /* No border for the button */
+            cursor: pointer;
+        }
+
+        #giftContainer {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="message-container">
+        <div class="message">
+            In the garden of my heart, the most exquisite flower is you, Anushka. Click here to discover the blossoming beauty of my love for you.
+        </div>
+        <div id="clickMe" onclick="showGifts()">Click me</div>
+        <p style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); font-size: 24px; color: #ff4d4d;">Dear Anushka,</p>
+    </div>
+
+    <div id="giftContainer">
+        <div class="poem">
+            <p>In a world of endless treasures,</p>
+            <p>Where love's the greatest measure,</p>
+		<p>For Anushka, my guiding star,</p>
+		<p>Gifts that show you're dear by far.</p>
+		<p>Roses soft, in Anushka's name,</p>
+		<p>Each petal whispers love's sweet claim.</p>
+		<p>Chocolates, a taste of our delight,</p>
+		<p>Reflecting moments, pure and bright.</p>
+		<p>Jewelry sparkling, like your eyes,</p>
+		<p>A token of the love that never dies.</p>
+		<p>In handwritten letters, words sincere,</p>
+		<p>Promises that I hold you near.</p>
+		<p>Each gift tells a tale of 'us,'</p>
+		<p>A story built on love and trust.</p>
+		<p>So here's to you, Anushka, my dove,</p>
+            <p>A page of gifts, a symbol of our love.</p>
+        </div>
+
+        <div class="message">
+         <p>Dear Anushka,</p>
+<p>As you explore this page filled with tokens of affection, I want you to feel the warmth of my love surrounding you. Each gift is a small reflection of the immense joy you bring into my life.</p>
+<p>The roses carry your name, for they bloom with the whispers of our love. They symbolize the delicate beauty and fragrant essence that you add to my world.</p>
+<p>The chocolates hold the sweetness of our shared delight, reflecting the pure and bright moments we've woven together. Each bite carries the taste of our joy.</p>
+<p>The jewelry, sparkling like your eyes, becomes a tangible token of a love that transcends time. It's a reminder that our connection is as enduring as the most precious gem.</p>
+<p>In handwritten letters, words become bridges that connect our hearts. They are sincere promises, binding us closer with every sentiment expressed.</p>
+<p>Each gift on this page tells a tale of 'us,' a story built on the foundation of love and trust. It's a celebration of our unique connection, and I hope it brings a smile to your face.</p>
+<p>So here's to you, Anushka, my dove, as this page unfolds a symphony of our love – a collection of moments, promises, and tokens that reflect the depth of my feelings for you.</p>
+<p>With all my love, <br> Pranav</p> 
+        </div>
+    </div>
+
+    <script>
+        function showGifts() {  
+            var giftContainer = document.getElementById("giftContainer");
+            document.querySelector(".message-container").style.display = "none";
+            document.getElementById("clickMe").style.display = "none";
+            giftContainer.style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
